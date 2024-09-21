@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #F0F8FF; /* Cor de fundo */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+h1 {
+    color: #DEB887; /* Cor do título */
+    margin: 10px 0; /* Menos margem superior */
+    font-size: 2.5em; /* Aumenta a fonte do título */
+}
+
+p {
+    color: #B8860B; /* Cor do texto */
+    margin: 10px 0;
+    font-size: 1.2em; /* Aumenta a fonte do parágrafo */
+}
+
+.back-button {
+    padding: 10px;
+    background-color: #B22222; /* Cor do botão "Voltar" */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #8B0000; /* Cor ao passar o mouse */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background: linear-gradient(#808080, #AFEEEE);
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+main {
+    flex: 1; /* Faz o main ocupar o espaço restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha para o topo */
+    align-items: center;
+    transition: 1s;
+    background-color: #F0FFFF; /* Cor de fundo do conteúdo */
+    padding-top: 50px; /* Espaçamento do topo */
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Ajusta tamanho da fonte para telas menores */
+    }
+
+    p {
+        font-size: 1em; /* Ajusta tamanho da fonte para telas menores */
+    }
+}

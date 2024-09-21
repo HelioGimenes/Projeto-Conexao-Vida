@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Instituição</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <script>
+        function mostrarAlerta(event) {
+            event.preventDefault(); // Impede o envio do formulário
+            alert("Cadastro concluído!");
+            window.location.href = '../index.html'; // Redireciona para a home
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Cadastro de Instituição</h1>
+    <form onsubmit="mostrarAlerta(event)">
+        <label for="nome">Nome da Instituição:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="cnpj">CNPJ:</label>
+        <input type="text" id="cnpj" name="cnpj" required><br><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required><br><br>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required><br><br>
+
+        <button type="submit">Cadastrar Instituição</button>
+    </form>
+
+    <button onclick="window.location.href='../index.html'">Cancelar e voltar para Home</button>
+</body>
+
+</html>
